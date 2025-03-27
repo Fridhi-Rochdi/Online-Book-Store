@@ -1,0 +1,65 @@
+.authors {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authors-search {
+    margin: 26px 0 20px;
+    width: 100%;
+    
+}
+
+.authors-search input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.authors-search input:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.authors-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.author {
+    border: 1px solid #ddd;
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.author:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.author img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.author-name {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    color: #333;
+}

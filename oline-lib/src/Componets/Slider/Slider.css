@@ -1,0 +1,111 @@
+.slider-container {
+    height: calc(100vh - 250px);
+    width: 100%;
+    display: flex;
+    position: relative;
+  
+    overflow: hidden;
+  
+}
+.arrow-left,
+.arrow-right{
+    margin:auto;
+    background-color: rgba(30, 30, 71, 0.795);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.slider-wrapper {
+   
+    height: 100%;
+    
+    display: flex;
+    transition: all 1s ease;
+}
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.slider {
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.slider-wrapper-img {
+    width: 50%;
+    height: 80%;
+    position: relative;
+}
+
+.slider-wrapper-img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Pas de changement, garde 'contain' pour ne pas déformer l'image */
+    position: absolute;
+    bottom: 40px;
+    
+}
+.slider-wrapper-info{
+    width: 50%;
+    margin-right: 40px;
+}
+                       
+.slider-info-title{
+    font-size: 1.5rem;
+}
+.slider-info-desc{
+    font-size: 20px;
+    margin-right: 21px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: "Pacifico", serif;
+}
+.first-slider{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.second-slider{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.third-slider{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+/*media query*/
+@media (max-width:720px){
+    .slider-wrapper-info{
+        margin-right: 40px;
+    }
+    .slider-info-title{
+        font-size: 1.2rem;
+    }
+    .slider-info-desc{
+        font-size: 17px;
+    }
+
+
+}
+@media (max-width:720px){
+    .slider-container{
+        display: none;
+    }
+}
